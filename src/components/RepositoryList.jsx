@@ -1,7 +1,5 @@
 import { RepositoryItem } from "./RepositoryItem";
 
-// const repositoryName = "unform";  Fazer interpolação - {repositoryName}
-
 const repository = {
     name: "unform",
     description: "Forms in React",
@@ -16,8 +14,8 @@ export function RepositoryList() {
             <ul>
                 <RepositoryItem repository={repository}/>
                 <RepositoryItem repository={repository}/>
-                <RepositoryItem />
-                <RepositoryItem />
+                <RepositoryItem repository={repository}/>
+                <RepositoryItem repository={repository}/>
             </ul>
         </section>
     )
